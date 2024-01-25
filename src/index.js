@@ -16,6 +16,13 @@ app.get('/tasks', (req, res) => {
   res.json(tasks);
 });
 
+
+// Get all issues
+app.get('/issues', (req, res) => {
+  res.json(tasks);
+});
+
+
 // Get a specific task
 app.get('/tasks/:id', (req, res) => {
   const taskId = parseInt(req.params.id);
